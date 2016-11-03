@@ -1,6 +1,13 @@
 import pygame #helps us make GUI games in python
 import random #help us define which direction the ball will start moving in
 
+
+import os, sys
+ 
+# set SDL to use the dummy NULL video driver, 
+#   so it doesn't need a windowing system.
+os.environ["SDL_VIDEODRIVER"] = "dummy"
+
 #DQN. CNN reads in pixel data. 
 #reinforcement learning. trial and error.
 #maximize action based on reward
